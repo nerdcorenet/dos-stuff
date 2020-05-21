@@ -38,7 +38,7 @@ int humansize(int size, char *str) {
   char sips[8] = {'k','M','G','T','P','E','Z','Y'}; // kilo, Mega, ...
   char sip = ' '; // SI Prefix
   float h_size = size;
-  int ttfs = -1; // Ten-Twnety-Fours
+  int ttfs = -1; // Ten-Twenty-Fours
   while (h_size > 1024) {
     h_size /= 1024;
     sip = sips[++ttfs];
